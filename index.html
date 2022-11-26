@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container"> 
+          <div class="anything">
+            <input type="text" id="output"></input>
+          
+          <!-- <div class="block"> -->
+        
+            <button data-all-clear class onclick="calculate(AC)" id="btnAC">AC</button>
+            <button data-delete class onclick="calculate(del)">del</button>
+            <button data-operation class onclick="calculate()">/</button>
+          
+            <button data-number class onclick="calculate(7)">7</button>
+            <button data-number class onclick="calculate(8)">8</button>
+            <button data-number class onclick="calculate(9)">9</button>
+           <button data-operation class onclick="calculate()">*</button>
+           
+           
+            <button data-number class onclick="calculate(4)">4</button> 
+            <button data-number class onclick="calculate(5)">5</button>
+            <button data-number class onclick="calculate(6)">6</button>
+            <button data-operation class onclick>-</button>
+          
+            <button data-number class onclick="calculate(1)">1</button>
+            <button data-number class onclick="calculate(2)">2</button>
+            <button data-number class onclick="calculate(3)">3</button>
+            <button>+</button>
+         
+            <button data-operation class onclick="calculate()">.</button>
+            <button data-number class onclick="calculate(0)">0</button> 
+            <button data-Equals class onclick="calculate()" id="Equals">=</button>
+          </div>
+        </div>
+      </main>
+    
+      <script src="index.js"></script>
+</body>
+</html>
