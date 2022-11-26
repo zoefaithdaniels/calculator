@@ -19,6 +19,7 @@ main{
     background-color: rgb(251, 248, 244);
     color: crimson;
  }
+
  /* button:last-child{
     margin-right: 0;
 
@@ -71,10 +72,13 @@ main{
    font-size: 21px;
    cursor: pointer;
  } */
-
- #btnAC, #Equals{
-   /* grid-column:1/ -3; */
+#btnAC {
+   width: 100%;
+   grid-column: 1/3;
+}
+#Equals{
    grid-column: span 2;
+   width: 100%;
 
  }
 

@@ -1,25 +1,45 @@
-const numberButtons = document.querySelectorAll('[data-number]')
-const operationButtons = document.querySelectorAll('[data-operations')
-const deleteButton = document.querySelector('[data-delete]')
-const allClearButton = document.querySelector('[data-all-clear]')
-const equalButton = document.querySelector('[data-equals]')
+let output = document.querySelector("#output");
+let empArray = [];
 
-clear() {
-
+function calculate(anyVal) {
+    switch(anyVal) {
+        case '.':
+            if (!empArray.includes('.')) {
+                output.value += anyVal;
+                empArray.push(anyVal);
+            }
+            break;
+        case '+':
+        case '-':
+        case '*':
+        case '/':
+            if(!output.value.endsWith(anyVal)) {
+                output.value += anyVal;
+                empArray = [];
+            }
+            break;
+        default:
+            empArray.push(anyVal);
+            output.value += anyVal;
+    }
 }
-delete(){
-    
+
+function clr() {
+    output.value = "";
+    empArray = [];
 }
 
+function del() {
+    output.value = output.value.slice(0,-1);
+    empArray.pop()
+}
 
-
-
-
-
-
-
-
-
-
-
+function equal() {
+    try {
+        output.value = eval(output.value);
+    }
+    catch (err) {
+        output.value = "";
+    }
+}
 
