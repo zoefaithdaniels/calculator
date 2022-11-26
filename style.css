@@ -5,19 +5,24 @@ body,main{
     padding: 0px;
     height: 100%;
     overflow: hidden;
-
-}
-main{
-    background-color: crimson;
-   height: 100vh
-}
- button{
+    
+   }
+   main{
+      background-color: rgb(18, 16, 16);
+      height: 100vh
+   }
+   button{
+    font-size: 1rem;
     width: 50px;
     height: 50px;
     text-align: center;
     margin-right: 10px;
     background-color: rgb(251, 248, 244);
     color: crimson;
+ }
+ button:hover {
+   background-color: rgb(12, 4, 4);
+   color: white;
  }
 
  /* button:last-child{
@@ -41,7 +46,7 @@ main{
     outline: none;
  }
  .container{
-    margin:0 auto;
+    margin: 0 auto;
     margin-top: 0px;
     max-width: 320px;
     border: 1px solid white;
@@ -50,14 +55,13 @@ main{
     box-shadow: 5px 5px 2px #999999;
     padding: 10px;
     background-color: crimson;
-    margin-top: 8%;
-    
+    margin-top: 8%;    
  }
  .anything{
     display: grid;
     /* grid-template-columns:repeat(4, 1fr); */
     /* grid-template-rows: repeat(3, 2fr); */
-    padding: 20px;
+    padding: 10px;
     grid-gap: 12px;
    
  }
